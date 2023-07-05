@@ -1,0 +1,6 @@
+### 登陆接口
+GET http://localhost:9681/panda/v1.0/login?username=panda&password=panda
+
+### 测试接口
+GET http://localhost:9681/panda/v1.0/test
+token: 1e2d2717-9dad-473f-ab29-362503b67e02

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <!-- pom模型版本 -->
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- 项目信息 -->
+  <groupId>com.panda</groupId><!-- 包名 -->
+  <artifactId>demo</artifactId><!-- 项目名 -->
+  <version>0.0.1-SNAPSHOT</version><!-- 版本 -->
+  <packaging>jar</packaging><!-- 打包方式 （pom,war,jar） -->
+
+  <name>demo</name><!-- 项目的名称， Maven 产生的文档用 -->
+  <description>Demo project for Spring Boot</description><!-- 项目的描述, Maven 产生的文档用 -->
+
+  <!-- 父级项目 -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.6.4</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+  <!-- 属性设置 -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><!-- 编译字符编码为utf-8 -->
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding><!-- 输出字符编码为UTF-8  -->
+    <java.version>1.8</java.version><!-- jdK版本 -->
+  </properties>
+
+  <!-- 依赖关系 -->
+  <dependencies>
+    <!-- 测试 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- springmvc -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!-- jpa(持久层) -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <!-- mysql(数据库) -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+  <!-- 统一版本控制 -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <scope>runtime</scope>
+        <version>5.1.47</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <!-- 编译 -->
+  <build>
+    <!-- 插件 -->
+    <plugins>
+      <!-- 打包插件 -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
