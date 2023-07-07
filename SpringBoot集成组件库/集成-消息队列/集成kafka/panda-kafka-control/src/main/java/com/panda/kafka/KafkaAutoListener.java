@@ -137,7 +137,7 @@ public class KafkaAutoListener implements ApplicationRunner {
             groupId = AopUtils.getTargetClass(obj).getSimpleName() + method.getName() + JSONObject.toJSONString(method.getParameterTypes());
         }
         // kafka不兼容的字符
-        List<String> characters = Arrays.asList(".", "[", "]", "$", "-", "_", "<", ">", "{", "}", "\"", ";");
+        List<String> characters = Arrays.asList("", "[", "]", "$", "-", "_", "<", ">", "{", "}", "\"", ";");
         for (String character : characters) {
             groupId = groupId.replace(character, "");
         }
