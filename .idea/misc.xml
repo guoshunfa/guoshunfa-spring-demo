@@ -5,6 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/01.SpringBoot/SpringBoot基础特性/springboot-base/pom.xml" />
+        <option value="$PROJECT_DIR$/01.SpringBoot/SpringBoot集成组件库/swagger-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/01.SpringBoot/SpringBoot集成组件库/springboot-2-swagger-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/01.SpringBoot/SpringBoot集成组件库/springboot-3-swagger-demo/pom.xml" />
       </list>
     </option>
   </component>
