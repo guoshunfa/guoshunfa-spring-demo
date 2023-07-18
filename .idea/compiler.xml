@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-2-swagger-demo" />
+        <module name="springboot-3-quartz-detailed-demo" />
         <module name="spring-modulith-demo" />
         <module name="springboot-3-quartz-demo" />
         <module name="springboot-base" />
@@ -23,6 +24,7 @@
       <module name="spring-modulith-demo" options="-parameters" />
       <module name="springboot-2-swagger-demo" options="-parameters" />
       <module name="springboot-3-quartz-demo" options="-parameters" />
+      <module name="springboot-3-quartz-detailed-demo" options="-parameters" />
       <module name="springboot-3-swagger-demo" options="-parameters" />
       <module name="springboot-base" options="-parameters" />
       <module name="swagger-demo" options="-parameters" />
