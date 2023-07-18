@@ -1,1 +1,1 @@
-想要了解详情，请前往[SpringBoot2集成Swagger](https://guoshunfa.com/2023/07/SpringBoot2集成Swagger/)。
+项目详细内容，请前往[www.guoshunfa.com](https://guoshunfa.com/2023/07/SpringBoot2集成Swagger/)查看。
