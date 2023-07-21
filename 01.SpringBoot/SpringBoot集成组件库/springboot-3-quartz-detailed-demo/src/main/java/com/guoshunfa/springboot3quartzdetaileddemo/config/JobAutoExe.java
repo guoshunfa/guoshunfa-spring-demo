@@ -44,7 +44,6 @@ public class JobAutoExe extends QuartzJobBean {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("job统一执行类");
     }
 
 }

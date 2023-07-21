@@ -1,0 +1,24 @@
+# 重点：启动项目后依次执行http请求，查看控制台效果。
+
+# 新增定时任务接口
+POST http://localhost:8080/job/save
+Content-Type: application/json
+
+{
+  "className": "com.guoshunfa.springboot3quartzdetaileddemo.job.TestJob",
+  "jobName": "测试job",
+  "cron": "*/5 * * * * ?",
+  "methodName": "doJob",
+  "paused": true
+}
+
+###
+
+# 删除定时任务接口
+DELETE http://localhost:8080/job/remove?jobId=
+###
+
+# 暂停/运行定时任务接口
+PUT http://localhost:8080/job/paused?jobId=64b74575fd9f78115632a9df&paused=false
+###
+
